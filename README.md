@@ -34,13 +34,11 @@ npm test         # vitest run
 
 见 `src/lib/review.ts` 与复习计划页：默认间隔 1、3、7、15、30 天，答对延长、答错缩短为 1 天、连续答错优先；可在个人设置里改间隔，也可手动改任意一题的下次复习日期。**这只是初始版本的安排规则，不是经过医学或教育学验证的最佳算法。**
 
-## 部署前置条件（阶段 G，当前均未完成）
+## 部署前置条件（阶段 G）
 
-- 用户给出 StudyFlow 的新 GitHub 仓库名，并把该仓库加进 Muse 的 GitHub App 可访问范围；
-- 用户新建 StudyFlow 专用的 Supabase 项目并通过安全表单提供地址与 anon 密钥（不在聊天里发密钥）；
-- 跑完上面两个 migration，配置环境变量后重新构建验证。
-
-当前状态：**尚未推送到 GitHub、尚未部署**。上面列出的是待办，不是已完成项。
+- 已完成：代码已推送到 GitHub 公开仓库 https://github.com/Rafayellllllllllllll/StudyFlow（main 分支）。
+- 尚未完成：尚未部署上线；尚未接通 StudyFlow 专用的 Supabase 项目。
+- 待办：新建 StudyFlow 专用的 Supabase 项目并提供地址与 anon 密钥（走安全表单，不在聊天里发密钥），跑完上面两个 migration，配置环境变量后重新构建验证。
 
 ## 已知限制
 
