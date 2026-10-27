@@ -45,7 +45,7 @@ export default function Login() {
           <button type="button" disabled={loading} onClick={() => void submit(true)} className="w-full rounded-xl border py-3 text-sm min-h-12">没有账号？点此注册</button>
         </form>
       </Card>
-      <p className="text-xs text-slate-500 mt-3">提示：演示模式下任何邮箱 + 6 位以上密码都可进入本机演示，不代表已注册 Supabase 账号；配置 Supabase 后请用真实账号。</p>
+      <p className="text-xs text-slate-500 mt-3">{mode === 'demo' ? '提示：演示模式下任何邮箱 + 6 位以上密码都可进入本机演示，不代表已注册 Supabase 账号；配置 Supabase 后请用真实账号。' : '提示：当前已连接 Supabase，请用真实邮箱注册或登录；注册后请按邮箱提示完成确认。'}</p>
     </div>
   )
 }

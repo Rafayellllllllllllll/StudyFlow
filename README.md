@@ -36,9 +36,8 @@ npm test         # vitest run
 
 ## 部署前置条件（阶段 G）
 
-- 已完成：代码已推送到 GitHub 公开仓库 https://github.com/Rafayellllllllllllll/StudyFlow（main 分支）。
-- 尚未完成：尚未部署上线；尚未接通 StudyFlow 专用的 Supabase 项目。
-- 待办：新建 StudyFlow 专用的 Supabase 项目并提供地址与 anon 密钥（走安全表单，不在聊天里发密钥），跑完上面两个 migration，配置环境变量后重新构建验证。
+- 已完成：代码已推送到 GitHub 公开仓库 https://github.com/Rafayellllllllllllll/StudyFlow（main 分支）；GitHub Pages 已上线 https://rafayellllllllllllll.github.io/StudyFlow/（gh-pages 分支）；StudyFlow 专用的 Supabase 项目（新加坡）已建好，两个 migration 已在 SQL Editor 运行成功，线上构建已带 Supabase 配置，实测顶部显示已连接 Supabase。
+- 注意：不要把真实密钥提交到 Git；线上构建产物里只含前端可公开的 anon 密钥，不含 service_role 密钥。
 
 ## 已知限制
 
